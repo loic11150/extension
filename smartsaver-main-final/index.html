@@ -1,0 +1,79 @@
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body >
+<header style="background: #ABD6DF; width: 400px; height:50px; display: flex; justify-content: center;
+align-items: center;">
+    <h3>Smart Saver</h3>
+</header>
+    <div id="root" style="width: 400px; height: auto; display: flex; justify-content: space-between;flex-wrap: wrap;">
+        <div class="card elevation" style="background-color: #6495ED;">
+            <div class="card-info">
+                <i class="fa fa-leaf fa-lg"></i>
+                <div id="color" style="border:1px solid #fff; margin-left: 6px; width: 25px; height: 25px;"></div>    
+            </div>
+            <!-- <br /> -->
+            <span id="energy" style="margin-top: -10px;"></span>
+        </div>
+        <!-- POWER -->
+        <div class="card elevation" style="background-color: #99a216;">
+            <div class="card-info">
+                <i class="fa fa-leaf fa-lg"></i>
+                <!-- <div id="color" style="border:1px solid #fff; margin-left: 6px; width: 25px; height: 25px;"></div>     -->
+            </div>
+            <br />
+            <div style="justify-content: space-between; display:flex; align-items: center;">
+                <span>power KW/H</span> 
+                <p id="power"></p>
+            </div>
+            
+        </div>
+        <!-- Gram of CO2 -->
+        <div class="card elevation" style="background-color: #ce2ce0;">
+            <div class="card-info">
+                <i class="fa fa-leaf fa-lg"></i>
+                <!-- <div id="color" style="border:1px solid #fff; margin-left: 6px; width: 25px; height: 25px;"></div>     -->
+            </div>
+            <br />
+            <div style="justify-content: space-between; display:flex;align-items: center;">
+                <span>gram of CO2</span> 
+                <p id="carbon"></p>
+            </div>
+        </div>
+        <!-- TOTAL -->
+        <div class="card elevation" style="background-color: #8b0845;">
+            <div class="card-info">
+                <i class="fa fa-leaf fa-lg"></i>
+                <!-- <div id="color" style="border:1px solid #fff; margin-left: 6px; width: 25px; height: 25px;"></div>     -->
+            </div>
+            <br />
+            <div style="justify-content: space-between; display:flex;align-items: center;">
+                <span>total (KW/H)</span> 
+                <p id="total"></p>
+            </div>
+        </div>
+        <div class="card elevation" style="background-color: #ff6600;">
+            <div class="card-info">
+                <i class="fa fa-window-close-o fa-lg"></i>
+                <button type="button" id="button" class="elevation">Deactivated</button>
+            </div>
+            <br />
+            <span>Close tabs</span> 
+        </div>
+        <div class="card elevation" style="background-color: #3CB371; flex-direction: column; justify-content: flex-end; align-items: left;">
+            <div style="margin-bottom: 4px">Manage emails</div>
+            <input id="input-email" type="text" name="input-email" style="margin-bottom: 4px; width: 120px;"/>
+            <button type="button" id="open-email" class="elevation" style="margin: 2px 0; cursor:pointer; border: 1px solid green; border-radius: 5px; background: green; color: white; font-weight: bold;">Go</button>
+        </div>
+        <div id="options" class="card elevation" style="height: 30px; background-color: grey;">
+            <div class="card-info" style="cursor:pointer">
+            <i class="fa fa-cog fa-lg"></i>
+            <span>Options</span> 
+        </div>
+
+        </div>
+    </div> 
+    <script src="js/index.js"></script>
+    
+</body>
