@@ -8,7 +8,7 @@ def get_datas(web_site):
         site = web_site.split("://www.")[1].split(".")[0]
         site = site+ "-"+ web_site.split("://www.")[1].split(".")[1].split("/")[0]
     else:
-        site = site = web_site.split("://")[1].split(".")[0]
+        site = site + web_site.split("://")[1].split(".")[0]
         site = site+ "-"+ web_site.split("://")[1].split(".")[1].split("/")[0]
     link = "https://www.websitecarbon.com/website/"+site
     sock = requests.get(link)
